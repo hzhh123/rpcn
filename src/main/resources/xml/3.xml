@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>3.jpg</filename>
+    <source>
+        <database>The VOC2007 Database</database>
+        <annotation>PASCAL VOC2007</annotation>
+        <image>flickr</image>
+        <flickrid>319318625</flickrid>
+    </source>
+    <owner>
+        <flickrid>El Mitch</flickrid>
+        <name>kaicheng</name>
+    </owner>
+    <size>
+        <width>864</width>
+        <height>864</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>uncover</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <rate>0.678</rate>
+        <bndbox>
+            <xmin>121.765</xmin>
+            <ymin>156.611</ymin>
+            <xmax>1010.89</xmax>
+            <ymax>566.603</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>gjp</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <rate>0.999</rate>
+        <bndbox>
+            <xmin>0.0</xmin>
+            <ymin>103.663</ymin>
+            <xmax>1007.84</xmax>
+            <ymax>601.71</ymax>
+        </bndbox>
+    </object>
+</annotation>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="annotation">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="folder" minOccurs="0"/>
+        <xs:element ref="filename" minOccurs="0"/>
+        <xs:element ref="source" minOccurs="0"/>
+        <xs:element ref="owner" minOccurs="0"/>
+        <xs:element ref="size" minOccurs="0"/>
+        <xs:element ref="segmented" minOccurs="0"/>
+        <xs:element ref="object" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="owner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="flickrid"/>
+        <xs:element ref="name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image" type="xs:string"/>
+  <xs:element name="ymin">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="156.611"/>
+        <xs:enumeration value="103.663"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="xmin">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="121.765"/>
+        <xs:enumeration value="0.0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="bndbox">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="xmin"/>
+        <xs:element ref="ymin"/>
+        <xs:element ref="xmax"/>
+        <xs:element ref="ymax"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pose" type="xs:string"/>
+  <xs:element name="flickrid">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="319318625"/>
+        <xs:enumeration value="El Mitch"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="truncated" type="xs:string"/>
+  <xs:element name="difficult" type="xs:string"/>
+  <xs:element name="source">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="database"/>
+        <xs:element ref="annotation"/>
+        <xs:element ref="image"/>
+        <xs:element ref="flickrid"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="segmented" type="xs:string"/>
+  <xs:element name="database" type="xs:string"/>
+  <xs:element name="depth" type="xs:string"/>
+  <xs:element name="ymax">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="566.603"/>
+        <xs:enumeration value="601.71"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="folder" type="xs:string"/>
+  <xs:element name="filename" type="xs:string"/>
+  <xs:element name="xmax">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1010.89"/>
+        <xs:enumeration value="1007.84"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="size">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="width"/>
+        <xs:element ref="height"/>
+        <xs:element ref="depth"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rate">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="0.678"/>
+        <xs:enumeration value="0.999"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="name">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="kaicheng"/>
+        <xs:enumeration value="uncover"/>
+        <xs:enumeration value="gjp"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="width" type="xs:string"/>
+  <xs:element name="height" type="xs:string"/>
+  <xs:element name="object">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="pose"/>
+        <xs:element ref="truncated"/>
+        <xs:element ref="difficult"/>
+        <xs:element ref="rate"/>
+        <xs:element ref="bndbox"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
